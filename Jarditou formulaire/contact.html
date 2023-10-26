@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="type.css">
+    <title>Contact</title>
+</head>
+     <body>
+        
+     
+                                                         <!--header-->
+    <header>
+        <img src="img/JarditouLogo.jpg" alt="Logo jarditou" > <br>
+        
+    </header>
+                                                            <!--nav-->
+    <nav>
+        <ul>
+
+            <ul class="dropdownmenu">
+              <li><a href="#">|Menu|</a>
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="tableau.html">Tableau</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </ul>    
+        <img src="img/promo.png" alt="Promotion sur lames de terrasse" class="imgPromo" >
+    </nav>
+                 
+                                      <!--section--> 
+        <main>
+           
+           
+           <h1 id="contact">Contact</h1> 
+                                                      
+        <p>* Ces zones sont obligatoires</p>
+        
+        <form action="http://bienvu.net/script.php" method="get" id="formulaire">
+            <fieldset class="PremierePartie">
+                <legend>Vos coordonnées</legend>
+                    <label for="nom">Votre nom* : </label>
+                        <input type="text" name="nom" id="nom"  title="Entrez votre nom">
+                            <p id="erreur1" style="color: red;"></p> <br>
+                            
+                    <label for="prenom">Votre prenom* : </label>    
+                        <input type="text" name="prenom" id="prenom"   title="Entrez votre prenom">
+                            <p id="erreur2" style="color: red;"></p> <br>
+                    
+                        <p id="sexe">Sexe* :</p><p id="erreur3" style="color: red;"> </p>
+                        <input type="radio" name="sexe" value="Feminin" id="sexe_f"  title="Champs obligatoires"><label for="sexe">Féminin</label>
+                    
+                        <input type="radio" name="sexe" value="Masculin" id="sexe_m"  title="Champs obligatoires"><label for="sexe">Masculin</label>
+                        
+                   <br>
+                    <label for="date">Date de naissance* : </label>
+                        <input type="date" name="ddn" id="date"  title="Entrez votre date de naissance"><br>
+                                <p id="erreur4" style="color: red;"></p>
+                        
+                    <label for="cp">Code postal* : </label>
+                        <input type="text" name="cp" id="cp"  title="Entrez votre code postal">
+                            <p id="erreur5" style="color: red;"></p><br>
+                
+                    <label for="adresse">Adresse : </label>
+                        <input type="text" name="adresse" id="adresse"><br>
+                
+                    <label for="ville">Ville :</label>
+                        <input type="text" name="ville"  id="ville"><br>
+                        
+                    <label for="email">Email : </label>
+                        <input type="email" name="email" id="email"  title="Entrez votre email">
+                        <p id="erreur6" style="color: red;"></p>
+                                <!--Seconde partie du formulaire-->
+            </fieldset>
+            
+            
+            
+            <fieldset >
+                <legend>Votre demande</legend>
+                    <label for="sujet">Sujet* : </label>
+                        <p id="erreur7" style="color: red;"></p>
+                        <select id="sujet" size="1">
+                            <option selected hidden disabled value="">Veuillez selectionner un sujet</option>
+                            <option value="mesCommandes">Mes commandes</option>
+                            <option value="questionSurUnProduit">Question sur un produit</option>
+                            <option value="reclamation">Reclamation</option>
+                            <option value="autres">Autres</option>
+                        </select><br>
+
+                    <label for="question">Votre question* : </label><p id="erreur8" style="color: red;"></p>
+                    <textarea name="question" id="question" cols="20" rows="2"></textarea>
+            </fieldset>
+                    <input type="checkbox" name="check" value="check" id="check" title="Champs obligatoires">
+                        <label for="check">J'accepte le traitement informatique de ce Formulaire</label>
+                            <p id="erreur9" style="color: red;"></p><br>
+                    
+                    <input type="submit" value="Envoyer" id="submit">
+                    <input type="reset" value="Annuler" id="reset">
+
+
+                    
+        </form>
+    
+        </main>                        <!--Mention-->
+    <footer>
+        <ul class="Mention">
+            <li><a href="" title="Mentionlegales">Mention légales</a></li>
+            <li><a href="" title="Horaires">Horaires</a></li>
+            <li><a href="" title="PlanDuSite">Plan du site</a></li>
+        </ul>
+    </footer>
+    <script src="eval.js"></script>
+    </body>
+</html>

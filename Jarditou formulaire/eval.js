@@ -1,7 +1,7 @@
 document.getElementById("formulaire").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Variables pour les messages d'erreur
+    /// Variables pour les messages d'erreur
     var erreur1 = "";
     var erreur2 = "";
     var erreur3 = "";
